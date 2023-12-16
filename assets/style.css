@@ -63,7 +63,7 @@
     border-radius:20px;
     border-color: #CCCCCC;
     border-style: none;
-    border-width: 1px;   */
+    border-width: 1px;   
 }
 
 
@@ -85,23 +85,26 @@
 }
 .videodescricao{
     display: flex;           
-    align-items: start;
+    align-items: end;
     flex-direction: column;   
-    width: 50vw;     
+    width: 50vw; 
+    margin-bottom: 5vh;    
+    flex-wrap: wrap;
 }
 .video{
-    /* width: 1020px;
-    height: 560px; */
-    /* background-color:blueviolet; */
+    width: 1070px;
+    height: 560px;
+    /* background-color:blueviolet;*/
 }
 
-.playlist{
-    margin-right: 5vw;
-    width: 25vw;
+.playlist{        
+    flex-wrap: wrap;
+    margin-right: 5vw; 
+    width: 30vw; 
+    
     background-color: white;
     display: flex;
-    flex-direction: column;
-    padding-left: 1vw;    
+    flex-direction: column;            
     
 }
 
@@ -111,7 +114,7 @@
     color: white;           
 }
 .imglista{
-    width: 160px;
+    width: 200px;
     height: 90px;
 }
 .imgtxt{
@@ -203,3 +206,128 @@
     color: #515151;
     width: 50%;
 }
+
+
+@media screen and (max-width: 700px){
+    .conteudo{
+        margin-top: 3vh;
+        width: 90%;
+        justify-content: center;
+    }
+    .playlist{                             
+        width: 90%;        
+    }
+    .videodescricao{
+        width: 100%;         
+        align-items: start;   
+        margin-left: 10vw;            
+ 
+    }
+    .video{
+        width: 330px;
+        height: 220px;    
+   
+    }
+    #iframeVideo{
+        width: 340px;
+        height: 220px; 
+    }
+    .vieodetalhe{
+        padding-top: 1vh;  
+        width: 100%;  
+        display: flex;           
+        flex-wrap: wrap;
+    }
+    .opcoescanal{
+        display: flex;
+        width: 100%;        
+        margin-top: 2vh;        
+        padding-right: 2.5vw;
+        flex-direction: row;    
+        justify-content: start;
+        align-items: center;        
+        flex-wrap: wrap;
+        /* background-color: yellow; */
+    }
+    .canal{   
+        padding-top: 0.5vh;
+        margin-bottom: 3.0vh;
+        align-items: center;     
+        width: 26vw;
+        padding-left: 10px;
+        font-size: 10px;
+    }
+    .canal img{
+        margin-right: 0.1vw;
+        width: 16px;
+        height: 16px;
+    }
+    .canal h3{
+        font-size: 8px;
+    }
+    .canal span{
+      font-size: 10px;
+    }
+    .btninscravase{     
+        width: 80px;
+        height: 4vh;
+        display: flex;
+        place-items: center;
+        align-items: center;
+        border-radius: 2px;
+    }
+    .btninscravase span{
+        font-size: 10px;
+    }
+    
+    .handinscrito img{
+        width: 16px;
+        height: 16px;
+    }
+    .handinscrito  span{
+        display: none;        
+    }
+    
+    .handlike img{
+        width: 16px;
+        height: 16px;
+    }
+    .handlike  span{        
+        display: none;
+    }
+    .itensOpcaoCanal{
+        margin-right: 10px;
+    }
+    .share img{
+        width: 16px;
+        height: 16px;
+    }
+    .share span {
+        display: none;
+    }
+    .download img{
+        width: 16px;
+        height: 16px;
+    }
+    .download span {
+        display: none;
+    }
+    .descricaodetalhe{
+        width: 100%;
+        text-align: justify;
+        
+    }
+    #logoyoutube{
+        display: none;
+    }
+    .inputpesquisa{
+        width: 220px;
+        height: 35px;        
+    }
+    .inputpesquisa input{
+        width: 220px;
+        height: 35px;
+          
+    }
+  
+} 
